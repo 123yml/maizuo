@@ -1,7 +1,7 @@
 <template>
 	<div class="movie">
-		<div v-if='type.url_type=="coming-soon"' class='coming'>
-			即将上映
+		<div v-if='type.url_type=="coming-soon"' class='divice'>
+			<div class="coming">即将上映</div>
 		</div>
 		<dl is='movieItem'
 			v-for='movie in movies'
@@ -52,18 +52,35 @@
 
 <style scoped lang='scss'>
 	.movie{
-		.coming{
-			border-bottom: -0.1rem;
-			maigin: .3rem auto;
+		.divice{
+			position: relative;
+		    margin-top: 30px;
+		    margin-bottom: 30px;
+		    border-bottom: 1px solid #a8a8a8;
+			.coming{
+				width: 65px;
+			    height: 20px;
+			    margin: 0 auto;
+			    margin-bottom: -10px;
+			    border-radius: 5px;
+			    font-size: 10px;
+			    line-height: 20px;
+			    text-align: center;
+			    color: #eee;
+			    background-color: #a7a7a7;
+			}
 		}
+		
+		
 		.more{
 			font-size: .12rem;
 			height: .3rem;
 			width: 1.6rem;
 			border-radius: .3rem;
-			border: 1px solid ;
+			border: 1px solid #aaa;
 			margin: 0 auto;
 			text-align: center;
+			color: #616161;
 			line-height: .3rem;
 
 		}
