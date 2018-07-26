@@ -6,6 +6,7 @@ import './stylesheets/main.scss'
 import Vue from 'vue'
 import App from './App'
 import VueLazyLoad from 'vue-lazyload'
+import router from './router/index.js'
 
 Vue.config.productionTip = false;
 Vue.use(VueLazyLoad ,{
@@ -17,5 +18,6 @@ Vue.use(VueLazyLoad ,{
 new Vue({
   el: '#app',
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  router
 })

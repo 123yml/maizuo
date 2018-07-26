@@ -54,8 +54,7 @@
 	.movie{
 		.divice{
 			position: relative;
-		    margin-top: 30px;
-		    margin-bottom: 30px;
+		    margin-top: 30px 0;
 		    border-bottom: 1px solid #a8a8a8;
 			.coming{
 				width: 65px;

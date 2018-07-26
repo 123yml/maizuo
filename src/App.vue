@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <app-header @click='$emit("close")'></app-header>
-    <home></home>
+    <router-view></router-view>
   </div>
 </template>
 

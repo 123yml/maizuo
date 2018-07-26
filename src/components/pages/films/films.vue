@@ -1,12 +1,19 @@
 <template>
 	<div class="films">
-		电影
+		<film-nav></film-nav>
+		<film-box></film-box>
 	</div>
 </template>
 
 <script>
+	import filmNav from './filmsNav.vue';
+	import filmBox from './filmsBox.vue';
 	export default{
-		name : 'Films'
+		name : 'Films',
+		components :{
+			filmNav,
+			filmBox
+		}
 	}
 </script>
 

@@ -54,6 +54,9 @@
 	    margin: 0;
 	    padding: 0;
 	    width: 100%;
+	    background-image: url("/static/images/loading.png");
+	    background-size: 100% 100%;
+	    background-position: center center;
 	    img{
 	    	width: 100%;
 	    }
